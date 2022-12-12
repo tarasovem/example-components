@@ -1,0 +1,59 @@
+mixin profile-stats(title, theme, valueType)
+  - 
+    let secondColor;
+    let mainColor;
+    
+    if (theme === 'rating') {
+      secondColor = 'rgba(245, 121, 77, 0.3)';
+      mainColor = '#F5794D';
+    } else {
+      secondColor = '#59C7FF';
+      mainColor = '#3E99ED';
+    }
+    
+  .profile-stats(class= theme)
+    h3.profile-stats__title= title
+    .profile-stats__limiter
+      .profile-stats__progress
+        p(class= valueType)
+          b 2
+          svg(viewBox="0 0 8 128")
+            path(stroke= secondColor stroke-opacity="0.7" d="M4 4, 4 124")
+            path(stroke= mainColor d="M4 124, 4 4" stroke-dasharray="calc(124px/72*1), 124px")
+          span= valueType === 'month' ? 'Сентябрь' : '2000'
+        p(class= valueType)
+          b 2
+          svg(viewBox="0 0 8 128")
+            path(stroke= secondColor stroke-opacity="0.7" d="M4 4, 4 124")
+            path(stroke= mainColor d="M4 124, 4 4" stroke-dasharray="calc(124px/72*1), 124px")
+          span= valueType === 'month' ? 'Сентябрь' : '2000'
+        p(class= valueType)
+          b 2
+          svg(viewBox="0 0 8 128")
+            path(stroke= secondColor stroke-opacity="0.7" d="M4 4, 4 124")
+            path(stroke= mainColor d="M4 124, 4 4" stroke-dasharray="calc(124px/72*1), 124px")
+          span= valueType === 'month' ? 'Сентябрь' : '2000'
+        p(class= valueType)
+          b 2
+          svg(viewBox="0 0 8 128")
+            path(stroke= secondColor stroke-opacity="0.7" d="M4 4, 4 124")
+            path(stroke= mainColor d="M4 124, 4 4" stroke-dasharray="calc(124px/72*1), 124px")
+          span= valueType === 'month' ? 'Сентябрь' : '2000'
+        p(class= valueType)
+          b 2
+          svg(viewBox="0 0 8 128")
+            path(stroke= secondColor stroke-opacity="0.7" d="M4 4, 4 124")
+            path(stroke= mainColor d="M4 124, 4 4" stroke-dasharray="calc(124px/72*1), 124px")
+          span= valueType === 'month' ? 'Сентябрь' : '2000'
+        p(class= valueType)
+          b 2
+          svg(viewBox="0 0 8 128")
+            path(stroke= secondColor stroke-opacity="0.7" d="M4 4, 4 124")
+            path(stroke= mainColor d="M4 124, 4 4" stroke-dasharray="calc(124px/72*1), 124px")
+          span= valueType === 'month' ? 'Сентябрь' : '2000'
+        p(class= valueType)
+          b 2
+          svg(viewBox="0 0 8 128")
+            path(stroke= secondColor stroke-opacity="0.7" d="M4 4, 4 124")
+            path(stroke= mainColor d="M4 124, 4 4" stroke-dasharray="calc(124px/72*1), 124px")
+          span= valueType === 'month' ? 'Сентябрь' : '2000'

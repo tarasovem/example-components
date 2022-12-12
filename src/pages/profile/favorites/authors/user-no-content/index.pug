@@ -1,0 +1,24 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль/Избранное/Авторы/Свои (нет контента)'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +tabs([
+      'Подборки',
+      'Цитаты',
+      'Истории',
+      'Лайфхаки',
+      'Неформат',
+      'Черновики'
+    ], 1)
+    +profile-cta(
+      'book',
+      'Нет авторов в избранном',
+      'Добавьте авторов в избранное, чтобы потом к ним вернуться.',
+      'Перейти к авторам'
+    )

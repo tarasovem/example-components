@@ -1,0 +1,18 @@
+mixin profile-game
+  .profile-game
+    ul.profile-game__list
+      li.profile-game__item
+        .profile-game__wrap
+          img.profile-group__bg(src="/images/profile-game.png" width="100%" height="100%")
+          a.profile-group__img(href="")
+            img(src="/images/profile-game.png" width="100%" height="100%")
+          a.profile-group__title(href="") Бесконечное приключение
+        input.profile-game__toggle(type="checkbox" id="profile-game-1")  
+        label(for="profile-game-1") Подробнее
+        ul.profile-game__tours
+          li.profile-game__tour.personal
+            a.profile-game__tour-name(href="") Тур 1 (бессрочный).
+            p
+              span Окончание 25 сентября 2018 г 00:25
+              a.profile-game__tour-link 1 заявка
+          

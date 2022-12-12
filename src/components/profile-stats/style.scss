@@ -1,0 +1,90 @@
+.profile-stats {
+  margin: 0 0 24px;
+  overflow: hidden;
+}
+
+.profile-stats.rating {
+  .profile-stats__progress {
+    background-color: rgba(#F7BB4E, 0.1);
+  }
+
+  .profile-stats__progress b {
+    color: #F5794D;
+  }
+}
+
+.profile-stats__title {
+  margin: 0 16px 12px;
+  font: 600 20px/24px "Source Sans Pro", sans-serif;
+}
+
+.profile-stats__limiter {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0 20px;
+  margin: 0 0 -20px;
+}
+
+.profile-stats__progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-align-content: flex-start;
+  border-radius: 16px;
+  background: rgba(89, 199, 255, 0.1);
+  height: 240px;
+  width: max-content;
+  margin: 0 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 24px 28px;
+}
+
+.profile-stats p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 50px;
+  margin: 0;
+  color: #252626;
+  font: 16px/16px "Source Sans Pro", sans-serif;
+}
+.profile-stats p.month {
+  width: 80px;
+}
+
+
+.profile-stats b {
+  color: #3E99ED;
+}
+
+.profile-stats svg {
+  width: 8px;
+  height: 128px;
+  margin: 14px 0 12px;
+}
+
+.profile-stats path {
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.profile-stats span {
+  padding: 0 8px;
+}

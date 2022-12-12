@@ -1,0 +1,44 @@
+@forward 'src/scss/main';
+@use 'src/components/profile-menu/style' as *;
+@use 'src/components/profile-tools/style' as *;
+@use 'src/components/lifehack-card/style' as *;
+@use 'src/components/pagination/style' as *;
+@use 'src/components/profile-cta/style' as *;
+@use 'src/components/profile-review-book-search/style' as *;
+
+.page-content .header {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 999;
+}
+
+.lifehack-list {
+  margin: 0 16px;
+}
+
+.lifehack-list .review-card {
+  margin-bottom: 44px;
+}
+
+.pf-tools {
+  margin-bottom: 20px;
+  margin-top: 17px;
+}
+
+.pf-review__title {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 16px;
+  font-weight: 600;
+}
+
+.pf-book-search {
+  margin-top: 16px;
+  margin-bottom: 51px;
+}

@@ -1,0 +1,163 @@
+.profile-game {
+  margin: 0 16px;
+}
+
+.profile-game__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-game__item {
+  display: flex;
+  margin: 0 0 16px;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+}
+
+.profile-game__wrap {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 14px;
+}
+
+.profile-game__wrap::before {
+  background-color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.profile-group__bg {
+  position: absolute;
+  -webkit-filter: blur(35px) brightness(60%);
+  filter: blur(35px) brightness(60%);
+  z-index: 1;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.profile-group__img {
+  display: flex;
+  flex-shrink: 0;
+  margin: 16px 14px;
+  z-index: 3;
+}
+
+.profile-group__img img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 80px;
+  width: 80px;
+}
+
+.profile-group__title {
+  font: 600 20px/24px "Source Sans Pro", sans-serif;
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 72px;
+  color: #fff;
+  z-index: 3;
+  margin: 0 0 20px;
+}
+
+.profile-game__toggle {
+  display: none;
+}
+
+.profile-game__toggle + label {
+  position: absolute;
+  top: 79px;
+  left: 108px;
+  display: flex;
+  z-index: 3;
+  font: 14px/24px "Source Sans Pro", sans-serif;
+  color: #fff;
+}
+
+.profile-game__toggle + label::before {
+  position: absolute;
+  content: '';
+  left: 77px;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  background: none;
+}
+
+.profile-game__toggle:checked + label::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 12px;
+}
+
+.profile-game__tours {
+  display: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 26px 16px 2px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background: #EDF0F7;
+  border-radius: 0 0 24px 24px;
+  margin: -12px 0 0;
+}
+
+.profile-game__toggle:checked ~ .profile-game__tours {
+  display: flex;
+}
+
+.profile-game__tour {
+  position: relative;
+  width: 100%;
+  margin: 0 0 14px;
+}
+
+.profile-game__tour::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+}
+
+.profile-game__tour.personal::before {
+  background: url("/images/SVGsprite.svg") -382px -78px no-repeat;
+}
+
+.profile-game__tour-name, .profile-game__tour-name:visited {
+  color: #252626;
+  font: 600 16px/26px "Source Sans Pro", sans-serif;
+}
+
+.profile-game__tour p {
+  display: flex;
+  color: #88898C;
+  font: 12px/24px "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+.profile-game__tour-link, .profile-game__tour-link:visited {
+  color: #217DD1;
+  font: 12px/24px "Source Sans Pro", sans-serif;
+  margin-left: auto;
+}

@@ -1,0 +1,67 @@
+mixin profile-tools(state)
+  section.pf-tools
+    input(type="checkbox" id="pf-tools-search-trigger")
+    input(type="checkbox" id="pf-tools-filter-trigger")
+    // При активном поиске добавляется класс ".search-on"
+    .pf-tools__wrapper
+      .pf-tools__search-input
+        input(type="search" placeholder="Поиск")
+      .pf-tools__group
+        label(for="pf-tools-search-trigger").pf-tools__search-button Поиск
+        label(for="pf-tools-filter-trigger").pf-tools__search-filter Фильтр
+
+      if state === 'subscribe'
+        button(type="button").pf-tools__subscription.active Подписаться
+        
+      if state === 'add'
+        a(href='##').pf-tools__add Добавить подборку
+
+    .pf-tools__filter
+      p.pf-tools__filter-title Фильтр
+      .pf-tools__select
+        details
+          summary Жанр
+          div
+            a(href="##") Все
+            a(href="##") Наука и образование
+            a(href="##") Гуманитарные и общественные науки
+            a(href="##") Детские книги
+            a(href="##") Зарубежная литература
+            a(href="##") Дом, семья, хобби и досуг
+            a(href="##") Публицистическая литература
+            a(href="##") Филология
+            a(href="##") Бизнес-книги
+            a(href="##") Технические науки
+            a(href="##") Русская литература
+            a(href="##") Языкознание
+            a(href="##") Учебная литература
+            a(href="##") Современная проза
+            a(href="##") Культура и искусство
+      .pf-tools__select
+        details
+          summary Оценка
+          div
+            a(href="##") Все
+            a(href="##") Без оценки
+            a(href="##") Нравится
+            a(href="##") Нормально
+            a(href="##") Не нравится
+      .pf-tools__select
+        details
+          summary Дата
+          div
+            a(href="##") Все
+            a(href="##") Месяц
+            a(href="##") 3 месяца
+            a(href="##") Полгода
+            a(href="##") Год
+            a(href="##") 2 года
+            a(href="##") 3 года
+      .pf-tools__select
+        details
+          summary По дате добавления
+          div
+            a(href="##") По дате добавления
+            a(href="##") По рейтингу книги
+            a(href="##") Самые популярные
+            a(href="##") Самые обсуждаемые

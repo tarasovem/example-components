@@ -1,0 +1,26 @@
+mixin profile-about(state)
+  section.pf-about
+    if state === 'new-user'
+      h2.pf-about__title О себе
+        a.pf-about__settings(href="##") Настройки
+      .pf-about__text
+        | Вы пока ничего не написали о себе.
+    else if state === 'suspicious'
+      h2.pf-about__title О себе
+      .pf-about__text
+        | Мы скрыли информацию, пока аккаунт на проверке.
+    else if state === 'stranger'
+      h2.pf-about__title О себе
+      .pf-about__text
+          | А может быть, посоветуете мне какую-то медитацию?
+          br
+          | – Знаете, я смотрю на вас и понимаю, что вы вряд...
+      a.pf-about__more Развернуть
+    else
+      h2.pf-about__title О себе
+        a.pf-about__settings(href="##") Настройки
+      .pf-about__text
+          | А может быть, посоветуете мне какую-то медитацию?
+          br
+          | – Знаете, я смотрю на вас и понимаю, что вы вряд...
+      a.pf-about__more Развернуть

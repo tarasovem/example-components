@@ -1,0 +1,23 @@
+.pf-empty-search {
+  padding-top: 140px;
+  background-image: url('/images/review-empty-search.png');
+  background-position: center top 64px;
+  background-repeat: no-repeat;
+  margin-bottom: 88px;
+}
+
+.pf-empty-search__title {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #252526;
+  text-align: center;
+}
+
+.pf-empty-search__description {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 8px;
+  padding: 0 16px;
+}

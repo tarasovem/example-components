@@ -1,0 +1,108 @@
+@use '../../scss/colors' as *;
+
+.pf-tags {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 48px;
+
+  @media (min-width: 768px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.pf-tags__title {
+  font-size: 20px;
+  color: $dark_main;
+  font-weight: 600;
+  line-height: 24px;
+  display: inline-block;
+  margin-bottom: 6px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.pf-tags__counter {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  margin-left: 4px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+    margin-left: 9px;
+  }
+}
+
+.pf-tags__list {
+  margin-top: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-left: -4px;
+
+  @media (min-width: 768px) {
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-top: 10px;
+  }
+}
+
+.pf-tags__item {
+  margin: 4px;
+  display: none;
+
+  @media (min-width: 768px) {
+    margin: 8px;
+  }
+}
+
+.pf-tags__item.show {
+  display: block;
+}
+
+.pf-tags__item a {
+  display: flex;
+  height: 28px;
+  box-sizing: border-box;
+  border: 1px solid $gray_84;
+  border-radius: 8px;
+  background: #fff;
+  color: #252626;
+  font: 14px/24px "Source Sans Pro", sans-serif;
+  padding: 0 10px;
+  transition: all 0.3s;
+
+  span {
+    margin-left: 4px;
+  }
+}
+
+.pf-tags__more {
+  border: 1px solid $gray_84;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: $dark_main;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 12px;
+  box-sizing: border-box;
+  height: 32px;
+  padding: 0 15px;
+  border-radius: 16px;
+
+  @media (min-width: 768px) {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 7px 23px;
+    border-radius: 20px;
+    height: auto;
+  }
+}

@@ -1,0 +1,31 @@
+mixin profile-favorite-authors(state)
+  section.pf-favorite-authors
+    h2.pf-favorite-authors__title Любимые авторы
+      span.pf-favorite-authors__counter 12
+    if state === 'new-user'
+      +profile-banner('authors')
+    .pf-favorite-authors__sliders
+      .pf-favorite-authors__limiter
+        .pf-favorite-authors__wrapper
+          if state === 'new-user'
+            a.pf-favorite-authors__link.pf-favorite-authors__link_empty
+              .pf-favorite-authors__avatar
+              p.pf-favorite-authors__author Добавьте автора
+          else
+            a.pf-favorite-authors__link
+              img.pf-favorite-authors__avatar(src="/images/author-1.png" alt="Портрет автора")
+              p.pf-favorite-authors__author Имя Фамилия
+            a.pf-favorite-authors__link
+              img.pf-favorite-authors__avatar(src="/images/author-1.png" alt="Портрет автора")
+              p.pf-favorite-authors__author Стивен Кинг
+            a.pf-favorite-authors__link
+              img.pf-favorite-authors__avatar(src="/images/author-1.png" alt="Портрет автора")
+              p.pf-favorite-authors__author Стивен Кинг
+            a.pf-favorite-authors__link
+              img.pf-favorite-authors__avatar(src="/images/author-1.png" alt="Портрет автора")
+              p.pf-favorite-authors__author Стивен Кинг
+            a.pf-favorite-authors__link
+              img.pf-favorite-authors__avatar(src="/images/author-1.png" alt="Портрет автора")
+              p.pf-favorite-authors__author Стивен Кинг
+    unless state === 'new-user'
+      button.pf-favorite-authors__more(type="button") Смотреть

@@ -1,0 +1,29 @@
+@forward 'src/scss/main';
+@use 'src/components/profile-menu/style' as *;
+@use 'src/components/profile-tools/style' as *;
+@use 'src/components/review-card/style' as *;
+@use 'src/components/pagination/style' as *;
+
+.page-content .header {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 999;
+}
+
+.lenta-list {
+  margin: 0 16px;
+}
+
+.lenta-list .review-card {
+  margin-bottom: 44px;
+}
+
+.pf-tools {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,59 @@
+@use "../../scss/colors" as *;
+
+.pf-book-search {
+  margin: 0 16px;
+}
+
+.pf-book-search__input {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url('/images/SVGsprite.svg');
+    background-repeat: no-repeat;
+    background-position: -234px 0;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+  }
+}
+
+.pf-book-search__input input {
+  font-family: inherit;
+  border: 1px solid $gray_84;
+  font-size: 14px;
+  line-height: 16px;
+  color: $dark_main;
+  padding: 7px 30px 7px 38px;
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  box-sizing: border-box;
+  
+  &::placeholder {
+    color: $gray_55;
+  }
+  
+  &:focus {
+    border-color: $blue_4;
+    outline: none;
+  }
+}
+
+.pf-book-search__input button {
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath fill='%23252626' fill-rule='evenodd' d='M12.5 10.793 8.964 7.257l-.707.707 3.536 3.536-3.536 3.536.707.707 3.536-3.536 3.535 3.536.708-.707-3.536-3.536 3.536-3.536-.707-.707-3.536 3.536Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  display: none;
+}

@@ -1,0 +1,24 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль/Созданное/Черновики/Свои (есть контент)'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +tabs([
+      'Подборки',
+      'Цитаты',
+      'Истории',
+      'Лайфхаки',
+      'Неформат',
+      'Черновики'
+    ], 5)
+    section.draft-list
+      +draft-card
+      +draft-card
+      +draft-card
+      +draft-card
+    +pagination

@@ -1,0 +1,24 @@
+@forward 'src/scss/main';
+@use 'src/components/profile-menu/style' as *;
+@use 'src/components/profile-status/style' as *;
+@use 'src/components/profile-personal-info/style' as *;
+@use 'src/components/profile-about/style' as *;
+@use 'src/components/profile-books/style' as *;
+@use 'src/components/profile-awards/style' as *;
+@use 'src/components/profile-favorite-genres/style' as *;
+@use 'src/components/profile-favorite-authors/style' as *;
+@use 'src/components/profile-top/style' as *;
+@use 'src/components/profile-tags/style' as *;
+@use 'src/components/profile-kv/style' as *;
+
+.page-content .header {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 999;
+}

@@ -1,0 +1,48 @@
+@use '../../scss/colors' as *;
+
+.tabs {
+  overflow: hidden;
+  width: 100%;
+}
+
+.tabs__limiter {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+}
+
+.tabs__list {
+  width: max-content;
+  display: flex;
+  margin: 0 16px;
+  padding: 0;
+  border-bottom: 1px solid $gray-90;
+}
+
+.tabs__item:not(:last-child) {
+  margin-right: 26px;
+}
+
+.tabs__item a {
+  display: flex;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  color: $dark_main;
+  font: 16px/20px "Source Sans Pro", sans-serif;
+  padding: 4px 8px 8px;
+  transition: all 0.3s;
+  outline: none;
+  margin-bottom: -1px;
+
+  span {
+    margin-left: 4px;
+    color: inherit;
+  }
+}
+
+.tabs__item.active a {
+  border-bottom: 1px solid $blue_4;
+  color: $blue_4;
+}

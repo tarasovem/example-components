@@ -1,0 +1,25 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль/Лайфхак/Свои'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +profile-cta(
+      'note',
+      'Напишите свой первый лайфхак',
+      'Что такое лайфхак? Зачем его добавлять? Что это даст читателю? Пояснить, что можно добавить к любой книге, и что книгу нужно найти в поиске ниже.'
+    )
+    +profile-review-book-search('Выбрать книгу для лайфхака')
+    p.pf-review__title Лайфхаки других читателей
+    +profile-tools
+    section.lifehack-list
+      +lifehack-card
+      +lifehack-card
+      +lifehack-card
+      +lifehack-card
+      +lifehack-card
+    +pagination

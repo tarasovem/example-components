@@ -1,0 +1,49 @@
+mixin quote-card
+  article.quote-card
+    .header-card
+      a.header-card-user(href="##")
+        img.header-card-user__avatar(src="/images/avatar-136.png" width="100%" height="auto")
+      .header-card__wrapper
+        .header-card__row1
+          a.header-card-user__name(href="##") Hermanarich
+        .header-card__row2
+          p.header-card-user__status 5 декабря 2008 г., 23:30
+      .header-card__menu
+        .header-card__menu-block
+          a(href="##") Пожаловаться
+    .lenta-card
+      .lenta-card__title
+      a(href="##")
+        object
+          .lenta-card__text.without-readmore
+            div
+              p. 
+                Я хочю быть умным если они разрешат мне. Они сказали им нужно взять разрешение у моей семьи но мой дядя 
+                Герман каторый заботился об мене помер и я не помню про свою семью. Я не видил мою маму и моево папу и 
+                мою маленькую сестру Норму очень очень давно. Может они тоже померли. Док Штраус спросил где они жыли. 
+                Мне кажеца в бруклине. Он сказал может они найдут их
+          .lenta-card__personage
+            img(src="/images/no-avatar.png" width="100%" height="auto")
+            span %имя_героя_если _заполнено%
+      .lenta-card-book
+        a.lenta-card-book__link(href="##")
+          img.lenta-card-book__img(src="/images/book-cover-1.jpg" width="100%" height="auto")
+        .lenta-card-book__wrapper
+          a.lenta-card__book-title(href="##") Лето в пионерском галстуке
+          p.lenta-card__author-wrap
+            a.lenta-card__author(href="##") Катерина Сильванова, Елена Малисова
+          .lenta-card__rating 3,9
+          a.btn-add-plus(href="##")
+            i
+    .footer-card
+      .footer-card__soc-active
+        a.sab__link.icon-like.no-bold(href="##")
+          span.no-plus.vote-hand 179
+        span
+          a.sab__link.icon-quote(href="##") 231
+        span
+          a.sab__link.icon-bookmark(href="##")
+            span.count-in-fav 38
+      .soc-active-block__wrapper
+        a.sab__link.icon-share(href="##")
+          span 38

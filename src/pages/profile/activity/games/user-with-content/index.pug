@@ -1,0 +1,27 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Активности/Игры/Свои/Есть_контент'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +tabs([
+      'Книгообмен',
+      'Группы',
+      'Играю',
+      'Статистика',
+      'Мероприятия',
+      'Заявки по контенту',
+      'Обсуждения'
+    ], 2)
+    +profile-section-select([
+      'Актуальные 1',
+      'Закрытые 1',
+      'Долги 1',
+      'Конкурсы 1'
+    ])
+    +profile-game
+  +pagination

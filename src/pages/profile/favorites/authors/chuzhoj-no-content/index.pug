@@ -1,0 +1,22 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль/Избранное/Книги/Чужой (нет контента)'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +tabs([
+      'Подборки',
+      'Цитаты',
+      'Истории',
+      'Лайфхаки',
+      'Неформат',
+      'Черновики'
+    ], 1)
+    +profile-cta(
+      'book',
+      '%Ник% пока не добавил авторов в избранное'
+    )

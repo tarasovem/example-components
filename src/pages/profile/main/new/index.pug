@@ -1,0 +1,17 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль/Главная/Свой_новый_акк'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +profile-personal-info('new-user')
+    +profile-about('new-user')
+    +profile-books('new-user')
+    +profile-favorite-genres('new-user')
+    +profile-favorite-authors('new-user')
+    +profile-kv('new-user')
+    +profile-top('new-user')

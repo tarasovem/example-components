@@ -1,0 +1,22 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Активности/Книгообмен/Свои/Есть_контент'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +tabs([
+      'Книгообмен',
+      'Группы',
+      'Играю',
+      'Статистика',
+      'Мероприятия',
+      'Заявки по контенту',
+      'Обсуждения'
+    ], 3)
+    +profile-stats('Статистика прочитанных книг по месяцам 2021 года', false, 'month')
+    +profile-stats('Статистика прочитанных книг по годам')
+    +profile-stats('Статистика средней оценки по годам', 'rating')

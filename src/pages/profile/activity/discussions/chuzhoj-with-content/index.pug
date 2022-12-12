@@ -1,0 +1,22 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль/Созданное/Подборки/Свои (есть контент)'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +tabs([
+      'Подборки',
+      'Цитаты',
+      'Истории',
+      'Лайфхаки',
+      'Неформат',
+      'Черновики'
+    ], 2)
+    section.discussiongroup-list
+      +discussiongroup-card
+      +discussiongroup-card
+    +pagination

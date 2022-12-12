@@ -1,0 +1,93 @@
+mixin profile-books(state)
+  section.pf-books
+    if state === 'new-user'
+      h2.pf-books__title.pf-books__title_new-user Книги
+      +profile-banner('books')
+      .pf-books__list
+        if state === 'new-user'
+          a.pf-books__item.pf-books__item_empty
+            .pf-books__picture
+            p.pf-books__status Прочитал
+              span добавьте книгу
+          a.pf-books__item.pf-books__item_empty
+            .pf-books__picture
+            p.pf-books__status Хочу прочитать
+              span добавьте книгу
+          a.pf-books__item.pf-books__item_empty
+            .pf-books__picture
+            p.pf-books__status Читаю сейчас
+              span добавьте книгу
+          a.pf-books__item.pf-books__item_empty
+            .pf-books__picture
+            p.pf-books__status Не дочитал
+              span добавьте книгу
+          a.pf-books__item.pf-books__item_empty
+            .pf-books__picture
+            p.pf-books__status Перечитал
+              span добавьте книгу
+    else if state === 'stranger' || state === 'suspicious'
+      h2.pf-books__title Книги
+      .pf-books__list
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-2.png" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-2.png" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-2.png" alt="Обложка книги")
+          p.pf-books__status Прочитал
+            span 12 книг
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          p.pf-books__status Хочет прочитать
+            span 12 книг
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          p.pf-books__status Читает сейчас
+            span 2 книги
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          p.pf-books__status Не дочитал
+            span 12 книг
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          p.pf-books__status Перечитывает
+            span 12 книг
+    else
+      h2.pf-books__title Книги
+      .pf-books__list
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-2.png" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-2.png" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-2.png" alt="Обложка книги")
+          p.pf-books__status Прочитал
+            span 12 книг
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          p.pf-books__status Хочу прочитать
+            span 12 книг
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          p.pf-books__status Читаю сейчас
+            span 2 книги
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          p.pf-books__status Не дочитал
+            span 12 книг
+        a.pf-books__item
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          img.pf-books__picture(src="/images/book-cover-1.jpg" alt="Обложка книги")
+          p.pf-books__status Перечитал
+            span 12 книг

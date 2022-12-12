@@ -1,0 +1,11 @@
+mixin profile-banner(state)
+  if state === 'books'
+    .pf-banner.pf-banner__books
+      button.pf-banner__close
+      p.pf-banner__text
+        | Здесь вы можете вести читательский дневник. Добавляйте книги в списки, чтобы не потерять их и отслеживать прогресс чтения!
+  if state === 'authors'
+    .pf-banner.pf-banner__authors
+      button.pf-banner__close
+      p.pf-banner__text
+        | Здесь будут отображаться авторы, которых вы добавили в Избранное. Нажмите “Добавить автора”, чтобы выбрать авторов.

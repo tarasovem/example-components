@@ -1,0 +1,43 @@
+mixin discussiongroup-card
+  article.discussiongroup-card
+    .header-card
+      a.header-card-user(href="##")
+        img.header-card-user__avatar(src="/images/avatar-136.png" width="100%" height="auto")
+      .header-card__wrapper
+        .header-card__row1
+          a.header-card-user__name(href="##")
+            span Arlett
+          a.header-card__category(href="##") в обсуждениях группы
+        .header-card__row2
+          p.header-card__groupname Новости
+      .header-card__menu
+        .header-card__menu-block
+          a(href="##") Пожаловаться
+    .lenta-card
+      a.lenta-card-book__link(href="##")
+        .lenta-card__picture-wrapper
+          img.lenta-card__picture(src="/images/profile-events.png" width="100%" height="auto")
+      .lenta-card__details
+        p.lenta-card__date 30 июня 2019 г.
+        p.lenta-card__aliases 18К
+      h3.lenta-card__title
+        a(href="##") На Монблане открыли книжный магазин
+        i.lenta-card__unformat(title="Это не история")
+      .lenta-card__text.without-readmore
+        div
+          p. 
+            Вы когда-нибудь читали книжечку на высоте 3466 метров? Теперь у вас есть такая возможность, ведь в Италии 
+            открыли первый книжный магазин высоко в горах. Итальянскую книжную лавку «La Feltrinelli 3466» разместили 
+            в самой высокой точке Европы – на склоне Монблана. Кажется, на сегодняшний день это один из самых необычных 
+            кни когда...
+        a.read-more__link(href="##") Развернуть
+    .footer-card
+      .footer-card__soc-active
+        a.sab__link.icon-like.no-bold(href="##")
+          span 179
+        a.sab__link.icon-comment(href="##") 231
+        span
+          a.sab__link.icon-bookmark(href="##")
+            span.count-in-fav 38
+      .soc-active-block__wrapper
+        a.sab__link.icon-share 38

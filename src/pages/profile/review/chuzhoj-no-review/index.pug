@@ -1,0 +1,11 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль - Рецензии - Свои'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +profile-cta('book', '%ник% не написал/написала рецензий')

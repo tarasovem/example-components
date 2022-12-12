@@ -1,0 +1,9 @@
+mixin profile-cta(icon, title, text, textButton, iconButton)
+  .pf-cta(class= icon)
+    p.pf-cta__title= title
+    
+    if text
+      p.pf-cta__description= text
+      
+    if textButton
+      a.pf-cta__button(href="##" class= iconButton)= textButton

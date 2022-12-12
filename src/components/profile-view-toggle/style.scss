@@ -1,0 +1,40 @@
+.lists__toggle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 104px;
+  flex-shrink: 0;
+  background-color: #F6F7FA;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.lists__toggle a {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+.lists__toggle--small {
+  background: url("/images/SVGsprite.svg") 0px -78px no-repeat;
+}
+
+.lists__toggle--large {
+  background: url("/images/SVGsprite.svg") -26px -78px no-repeat;
+}
+
+.lists__toggle--medium {
+  background: url("/images/SVGsprite.svg") -52px -78px no-repeat;
+}
+
+.lists__toggle--active.lists__toggle--small {
+  background: url("/images/SVGsprite.svg") 0px -52px no-repeat;
+}
+
+.lists__toggle--active.lists__toggle--large {
+  background: url("/images/SVGsprite.svg") -26px -52px no-repeat;
+}
+
+.lists__toggle--active.lists__toggle--medium {
+  background: url("/images/SVGsprite.svg") -52px -52px no-repeat;
+}

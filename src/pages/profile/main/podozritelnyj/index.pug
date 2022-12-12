@@ -1,0 +1,23 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль - Главная - Подозрительный профиль'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +profile-status('author')
+    +profile-status
+    +profile-personal-info('suspicious')
+    +profile-about('suspicious')
+    +profile-books
+    +profile-awards
+    +profile-favorite-genres
+    +profile-favorite-authors
+    +profile-kv
+    +profile-top
+
+block scripts
+  script(src="./scripts.js")

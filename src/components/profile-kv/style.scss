@@ -1,0 +1,90 @@
+@use "../../scss/colors" as *;
+
+.pf-kv {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 52px;
+
+  @media (min-width: 768px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.pf-kv__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 17px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.pf-kv__settings {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-image: url('/images/SVGsprite.svg');
+  background-position: -494px 0;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
+.new-user .pf-kv__banner {
+  margin-bottom: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    display: inline-block; 
+  }
+}
+
+.new-user .pf-kv__banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.new-user .pf-kv__banner + .pf-kv__text {
+  margin-top: 16px;
+}
+
+.pf-kv__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark_main;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.pf-kv__link {
+  border: 1px solid $gray_84;
+  border-radius: 16px;
+  height: 32px;
+  color: $gray_25;
+  margin-top: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 16px;
+  font-weight: 600;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24;
+    margin-top: 24px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 24px;
+  }
+}

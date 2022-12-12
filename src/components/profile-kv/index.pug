@@ -1,0 +1,22 @@
+mixin profile-kv(state)
+  if state === 'new-user'
+    section.pf-kv.new-user
+      h2.pf-kv__title Книжный вызов 2022
+        a.pf-kv__settings(href="##") Настройки
+      .pf-kv__banner
+        img(src="https://u.livelib.ru/reader/Satyricon/537x240/bdcd/challenge2022.png" alt="Баннер Книжного вызова" width="537" height="240")
+      .pf-kv__text
+        | Вы можете принять участие в Книжном вызове. Сколько вниг вы сможете прочитать в этом году?
+        br
+        | Поставьте себе цель!
+      .pf-kv__text
+        | После принятия Книжного вызова, в настройках вы сможете включить виджет с результатами.
+        br
+        | Он отобразится здесь.
+      a.pf-kv__link(href="##") Принять участие
+  else
+    section.pf-kv
+      h2.pf-kv__title Книжный вызов 2022
+      .pf-kv__banner
+        a(target='_blank', rel='nofollow', title='LiveLib', href='https://www.livelib.ru/challenge/2022/reader/JPrakk')
+          img(alt='LiveLib', src='https://u.livelib.ru/reader/JPrakk/challenge2022.png', style='border: 0;')

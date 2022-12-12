@@ -1,0 +1,8 @@
+mixin tabs(list, active_item)
+  .tabs
+    .tabs__limiter
+      ul.tabs__list
+        each val, index in list
+          li(class= (index === active_item ? "tabs__item active" : "tabs__item"))
+            a(href="##")= val
+              span x

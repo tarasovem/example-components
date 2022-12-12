@@ -1,0 +1,23 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль - Главная - Свой профиль'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +profile-status
+    +profile-personal-info('stranger')
+    +profile-about('stranger')
+    +profile-books('stranger')
+    +profile-awards
+    +profile-favorite-genres
+    +profile-favorite-authors
+    +profile-kv
+    +profile-top
+    +profile-tags
+    
+block scripts
+  script(src="./scripts.js")

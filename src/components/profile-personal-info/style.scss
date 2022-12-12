@@ -1,0 +1,150 @@
+@forward "src/components/tooltip/style";
+@use "../../scss/colors" as *;
+
+.pf-pers-info {
+  margin: 20px 16px 43px;
+  
+  @media (min-width: 768px) {
+    margin: 16px 0 48px;
+  }
+}
+
+.pf-pers-info__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+}
+
+.pf-pers-info__settings {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-image: url('/images/SVGsprite.svg');
+  background-position: -494px 0;
+  background-repeat: no-repeat;
+  font-size: 0;
+
+  @media (min-width: 768px) {
+    transform: translateY(8px);
+  }
+}
+
+.pf-pers-info__list {
+  font-size: 16px;
+  margin-top: 8px;
+  
+  @media (min-width: 768px) {
+    display: grid;
+    gap: 8px 24px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-flow: column;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.pf-pers-info__list_new-user {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.pf-pers-info__item:not(:first-child) {
+  margin-top: 8px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.pf-pers-info__prop {
+  color: $gray_55;
+  line-height: 20px;
+  margin-right: 4px;
+  
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &::after {
+    content: ':';
+  }
+}
+
+.pf-pers-info__value {
+  color: $dark_main;
+  line-height: 20px;
+}
+
+.pf-pers-info__value_socials {
+  display: block;
+  margin-top: 8px;
+}
+
+.pf-pers-info__link {
+  color: $blue_2;
+}
+
+.pf-pers-info__socials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pf-pers-info__social {
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+
+.pf-pers-info__social-link {
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url('/images/SVGsprite.svg');
+  display: block;
+
+  &.vk {
+    background-position: 0 -478px;
+  }
+
+  &.google {
+    background-position: -32px -478px;
+  }
+
+  &.mailru {
+    background-position: -64px -478px;
+  }
+
+  &.litres {
+    background-position: -96px -478px;
+  }
+
+  &.ok {
+    background-position: -128px -478px;
+  }
+
+  &.livejournal {
+    background-position: -160px -478px;
+  }
+
+  &.lastfm {
+    background-position: -192px -478px;
+  }
+
+  &.linkedin {
+    background-position: -224px -478px;
+  }
+}
+
+.pf-pers-info__social-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}

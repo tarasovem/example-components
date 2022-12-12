@@ -1,0 +1,22 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль/Созданное/Лайфхаки/Свои (нет контента)'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +tabs([
+      'Подборки',
+      'Цитаты',
+      'Истории',
+      'Лайфхаки',
+      'Неформат',
+      'Черновики'
+    ], 3)
+    +profile-cta(
+      'book',
+      '%ник% не добавил лайфхак'
+    )

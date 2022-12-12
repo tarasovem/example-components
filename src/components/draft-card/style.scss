@@ -1,0 +1,37 @@
+@use '../../scss/colors' as *;
+
+.draft-card {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $gray_88;
+  border-radius: 16px;
+  padding: 15px;
+}
+
+.draft-card__date {
+  color: $gray-55;
+}
+
+.draft-card__title {
+  color: $blue_4;
+  margin-top: 8px;
+}
+
+.draft-card__delete {
+  font-size: 16px;
+  color: $dark_main;
+  font-weight: 600;
+  align-self: end;
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  padding-right: 0;
+  padding-left: 28px;
+  margin-top: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath fill='%23252626' fill-rule='evenodd' d='M8.5 3v1h-5a.5.5 0 0 0 0 1h17a.5.5 0 0 0 0-1h-5V3c0-1.148-.828-2-2-2h-3c-1.156 0-2 .86-2 2Zm6 1V3c0-.5-.5-1-1-1h-3c-.5 0-1 .5-1 1v1h5Zm2 19c1.172 0 1.883-.906 2-2 .117-1.094 1-16 1-16h-1s-.953 15.414-1 16c-.047.586-.5 1-1 1h-9c-.5 0-.967-.501-1-1-.133-1.992-1-16-1-16h-1s.922 14.961 1 16c.078 1.04.86 2 2 2h9Zm-5-14.5a.5.5 0 0 1 1 0v10a.5.5 0 0 1-1 0v-10Zm4.201-.49a.492.492 0 0 0-.53.462l-.605 10.005a.51.51 0 0 0 .469.537.491.491 0 0 0 .529-.462l.606-10.005a.51.51 0 0 0-.469-.537Zm-6.874.462a.492.492 0 0 0-.529-.462.51.51 0 0 0-.468.537l.605 10.003a.491.491 0 0 0 .53.462.51.51 0 0 0 .468-.537L8.827 8.472Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center left;
+}

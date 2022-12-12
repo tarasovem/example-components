@@ -1,0 +1,48 @@
+mixin selection-card
+  article.selection-card
+    .header-card
+      a.header-card-user(href="##")
+        img.header-card-user__avatar(src="/images/avatar-136.png")
+      a.header-card-user__name(herf="##")
+        span VaLeon
+      a.header-card__category(href="##") в подборках
+      a.header-card__add-select(href="##")
+      .header-card__menu
+        .header-card__menu-block
+          a(href="##") Случайная книга
+          a(href="##") Версия для печати
+          a(href="##") Пожаловаться
+    .lenta-card
+      .lenta-card-book
+        img.lenta-card-book__bg(src="/images/book-cover-1.jpg" width="100%" height="auto")
+        h3.lenta-card__title
+          a(href="##") Самые популярные книги 2019 года по версии сайта...
+        .lenta-card__count-book
+          span 14К
+          | книг
+        .lenta-card__wrap
+          a.lenta-card-book__link(href="##")
+            img.lenta-card-book__img(src="/images/book-cover-1.jpg" width="100%" height="auto")
+          a.lenta-card-book__link(href="##")
+            img.lenta-card-book__img(src="/images/book-cover-2.png" width="100%" height="auto")
+      a.lenta-card__show-all(href="##") Вся подборка
+      .lenta-card__details
+        p.lenta-card__date 30 июня 2019 г.
+        p.lenta-card__aliases 20К
+      a(href="##")
+        object
+          .lenta-card__text.without-readmore
+            div
+              p Что ж, на различных литературных сайтах я часто сталкиваюсь со списками (ТОПами) самых переоцененных книг по версии...
+            a.read-more__link(href="##") Развернуть
+      .footer-card.selection-slide
+        .footer-card__soc-active
+          a.sab__link.icon-like.no-bold(href="##")
+            span.no-plus.vote-hand 179
+          a.sab__link.icon-comment(href="##") 231
+          span
+            a.sab__link.icon-bookmark(href="##")
+              span.count-in-fav 38
+        .soc-active-block__wrapper
+          a.sab__link.icon-share(href="##")
+            span 38

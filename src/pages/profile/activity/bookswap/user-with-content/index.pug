@@ -1,0 +1,26 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Активности/Книгообмен/Свои/Есть_контент'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +tabs([
+      'Книгообмен',
+      'Группы',
+      'Играю',
+      'Статистика',
+      'Мероприятия',
+      'Заявки по контенту',
+      'Обсуждения'
+    ], 0)
+    +profile-tools('add')
+    section.bookswap-list
+      +bookswap-card
+      +bookswap-card
+      +bookswap-card
+      +bookswap-card
+    +pagination

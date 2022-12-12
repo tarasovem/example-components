@@ -1,0 +1,137 @@
+@use  '../../scss/colors' as *;
+
+.pf-books {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.pf-books__title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+}
+
+.pf-books__title_new-user {
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
+
+.pf-books__list {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.pf-books__item {
+  position: relative;
+  display: flex;
+  min-height: 88px;
+  color: $dark_main;
+  margin-bottom: 24px;
+  font: 600 20px/24px "Source Sans Pro", sans-serif;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    margin-bottom: 72px;
+  }
+}
+
+.pf-books__item_empty .pf-books__picture {
+  width: 57px;
+  height: 88px;
+  background-color: $gray_95;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'%3E%3Cpath fill='%23252626' fill-rule='evenodd' d='M13 4a1 1 0 1 0-2 0v6H5a1 1 0 1 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2h-6V4Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px;
+
+  @media (min-width: 768px) {
+    width: 82px;
+    height: 120px;
+  }
+}
+
+.pf-books__picture {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  width: 57px;
+  height: 88px;
+  border-radius: 6px;
+  z-index: 3;
+  filter: brightness(95%);
+
+  @media (min-width: 768px) {
+    width: 82px;
+    height: 120px;
+    border-radius: 8px;
+  }
+}
+
+.pf-books__picture:nth-child(2) {
+  left: 22px;
+  width: 45px;
+  height: 72px;
+  border-radius: 6px;
+  z-index: 2;
+  opacity: 0.7;
+
+  @media (min-width: 768px) {
+    width: 68px;
+    height: 100px;
+    border-radius: 8px;
+    left: 30px;
+  }
+}
+
+.pf-books__picture:nth-child(3) {
+  width: 35px;
+  height: 56px;
+  border-radius: 6px;
+  left: 42px;
+  z-index: 1;
+  opacity: 0.4;
+
+  @media (min-width: 768px) {
+    width: 54px;
+    height: 80px;
+    left: 60px;
+  }
+}
+
+.pf-books__status {
+  margin-left: 97px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font: 600 20px/24px "Source Sans Pro", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+    line-height: 32px;
+    margin-left: 128px;
+  }
+}
+
+.pf-books__status span {
+  font-weight: 300;
+  display: flex;
+}

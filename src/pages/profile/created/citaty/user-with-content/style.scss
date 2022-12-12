@@ -1,0 +1,30 @@
+@forward 'src/scss/main';
+@use 'src/components/profile-menu/style' as *;
+@use 'src/components/tabs/style' as *;
+@use 'src/components/profile-tools/style' as *;
+@use 'src/components/quote-card/style' as *;
+@use 'src/components/pagination/style' as *;
+
+.page-content .header {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 999;
+}
+
+.tabs {
+  margin-top: 10px;
+}
+
+.quote-list {
+  margin: 16px 16px 38px;
+}
+
+.quote-card:not(:first-child) {
+  margin-top: 34px;
+}

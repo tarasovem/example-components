@@ -1,0 +1,68 @@
+mixin bookswap-card(overlap)
+  article.bookswap-card
+    .header-card
+      a.header-card-user(href="##")
+        img.header-card-user__avatar(src="/images/avatar-136.png" width="100%" height="auto")
+      a.header-card-user__name(href="##")
+        span JewelJul
+      a.header-card__category(href="##") в объявлениях
+      
+      if overlap
+        a.header-card__overlap(href="##")
+          span.comparison= overlap
+          
+      .header-card__menu
+        .header-card__menu-block
+          a(href="##") Пожаловаться
+    .lenta-card
+      .lenta-card__wrapper
+        .lenta-card__details
+          p.lenta-card__date 30 июня 2019 г.
+          p.lenta-card__aliases
+            span 18К
+        .lenta-card-tags
+          .lenta-card-tags__limiter
+            ul.lenta-card-tags__list
+              li.lenta-card-tags__item
+                p.lenta-card__buy Продам
+              li.lenta-card-tags__item
+                p.lenta-card__change Поменяю
+              li.lenta-card-tags__item
+                p.lenta-card__post Можно почтой
+              li.lenta-card-tags__item
+                p.lenta-card__read Дам почитать
+        h3.lenta-card__title
+          a(href="##") Сумерки
+        a(href="##")
+          object
+            .lenta-card__text.without-readmore
+              div
+                p
+                  b г. Санкт-Петербург.
+                  |
+                  | У книги состояние новой, только на форзаце жёлтой ручкой написана буква ч или 4 (я не знаю, что это...
+              a.read-more__link(href="##") Развернуть
+            .lenta-card__reserved Книга зарезервирована
+            a.lenta-card__write(href="##") Написать сообщение
+
+      .lenta-card-book
+        a.lenta-card-book__link(href="##")
+          img.lenta-card-book__img(src="/images/book-cover-1.jpg" width="100%" height="auto")
+        .lenta-card-book__wrapper
+          a.lenta-card__book-title(href="##") Как роман
+          p.lenta-card__author-wrap
+            a.lenta-card__author(href="##") Даниэль Пеннак
+          .lenta-card__rating 4,3
+          .userbook-container.btn-add-plus__wrapper
+            a.btn-add-plus
+              i
+    .footer-card
+      .footer-card__soc-active
+        a.sab__link.icon-like.no-bold(href="##")
+          span 179
+        a.sab__link.icon-comment(href="##") 231
+        span
+          a.sab__link.icon-bookmark(href="##")
+            span.count-in-fav 38
+      .soc-active-block__wrapper
+        a.sab__link.icon-share 38

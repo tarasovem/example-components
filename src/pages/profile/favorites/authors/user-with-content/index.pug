@@ -1,0 +1,27 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Избранное/Книги/Свои/Есть_контент'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +tabs([
+      'Книги',
+      'Авторы',
+      'Рецензии',
+      'Подборки',
+      'Цитаты',
+      'Истории',
+      'Лайфхаки',
+      'Персонажи',
+      'Обсуждения',
+      'Мероприятия',
+      'Комментарии',
+      'Объявления в книгообмене',
+      'Заявки в игре'
+    ], 1)
+    +authors-list
+    +pagination

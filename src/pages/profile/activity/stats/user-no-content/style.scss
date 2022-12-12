@@ -1,0 +1,32 @@
+@forward '../../../../../scss/main';
+@use '../../../../../components/profile-menu/style' as *;
+@use '../../../../../components/tabs/style' as *;
+@use '../../../../../components/profile-cta/style' as *;
+
+.page-content .header {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 999;
+}
+
+.tabs {
+  margin-top: 10px;
+}
+
+.bookswap-list {
+  margin: 16px 16px 38px;
+}
+
+.bookswap-card:not(:first-child) {
+  margin-top: 34px;
+}
+
+.bookswap-list .btn__show-more {
+  margin-top: 32px;
+}

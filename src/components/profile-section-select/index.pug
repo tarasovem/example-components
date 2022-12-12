@@ -1,0 +1,9 @@
+mixin profile-section-select(list)
+  - const title = list[0];
+
+  .groups-select
+    details
+      summary= title
+      div
+        each val in list
+          a(href="##")= val

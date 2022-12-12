@@ -1,0 +1,14 @@
+mixin profile-status(state)
+  if state === 'author'
+    .pf-status.pf-status__author
+      .pf-status__title Автор
+        span.pf-status__info
+      a.pf-status__link(href="##") Псевдоним
+    
+  else
+    .pf-status
+      .pf-status__wrapper
+        .pf-status__title Эксперт
+          +tooltip
+        .pf-status__descr(title="сложный персонаж") ведьма и сложный персонаж
+      a.pf-status__link(href="##") Топ-1000 экспертов: 15 место

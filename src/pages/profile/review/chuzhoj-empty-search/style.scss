@@ -1,0 +1,16 @@
+@forward 'src/scss/main';
+@use 'src/components/profile-menu/style' as *;
+@use 'src/components/profile-tools/style' as *;
+@use 'src/components/profile-empty-search/style' as *;
+
+.page-content .header {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 999;
+}

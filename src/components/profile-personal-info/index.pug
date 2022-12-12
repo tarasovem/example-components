@@ -1,0 +1,162 @@
+mixin profile-personal-info(state)
+  section.pf-pers-info
+    if state === 'new-user'
+      h2.pf-pers-info__title Личная информация
+        a.pf-pers-info__settings(href="##") Настройки
+      ul.pf-pers-info__list.pf-pers-info__list_new-user
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Имя
+          span.pf-pers-info__value Саша
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Фамилия
+          span.pf-pers-info__value Александра
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Пол
+          span.pf-pers-info__value пробка
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Рейтинг
+          span.pf-pers-info__value
+            a.pf-pers-info__link(href="##") 153 тыс. баллов
+            +tooltip
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Активность
+          span.pf-pers-info__value
+            a.pf-pers-info__link(href="##") 2 508 баллов
+        li.pf-pers-info__item
+          span.pf-pers-info__prop На Лайвлибе с
+          span.pf-pers-info__value 2 марта 2022 г.
+      
+    else if state === 'suspicious'
+      h2.pf-pers-info__title Личная информация
+      p.pf-pers-info__description Мы скрыли информацию, пока аккаунт на проверке.
+      
+    else if state === 'stranger'
+      h2.pf-pers-info__title Личная информация
+      ul.pf-pers-info__list
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Имя
+          span.pf-pers-info__value Саша
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Фамилия
+          span.pf-pers-info__value Александра
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Дата рождения
+          span.pf-pers-info__value 1 ноября 1957 г.
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Пол
+          span.pf-pers-info__value пробка
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Статус
+          span.pf-pers-info__value Представитель генштаба
+            +tooltip
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Локация
+          span.pf-pers-info__value Россия
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Род занятий
+          span.pf-pers-info__value Дизайнересса
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Сайт
+          span.pf-pers-info__value
+            a.pf-pers-info__link(href="##") www.litres.ru
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Читалки
+          span.pf-pers-info__value PocketBook Touch Lux 3
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Рейтинг
+          span.pf-pers-info__value
+            a.pf-pers-info__link(href="##") 153 тыс. баллов
+            +tooltip
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Активность
+          span.pf-pers-info__value
+            a.pf-pers-info__link(href="##") 2 508 баллов
+        li.pf-pers-info__item
+          span.pf-pers-info__prop На Лайвлибе с
+          span.pf-pers-info__value 2 марта 2022 г.
+      .pf-pers-info__social-list
+        span.pf-pers-info__prop Профили в соцсетях
+        span.pf-pers-info__value.pf-pers-info__value_socials
+          ul.pf-pers-info__socials
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.vk(href="##") VK
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.google(href="##") Google
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.mailru(href="##") Mail.ru
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.litres(href="##") ЛитРес
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.ok(href="##") OK
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.livejournal(href="##") LiveJournal
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.lastfm(href="##") Last.fm
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.linkedin(href="##") LinkedIn
+      
+    else
+      h2.pf-pers-info__title Личная информация
+        a.pf-pers-info__settings(href="##") Настройки
+      ul.pf-pers-info__list
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Имя
+          span.pf-pers-info__value Саша
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Фамилия
+          span.pf-pers-info__value Александра
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Дата рождения
+          span.pf-pers-info__value 1 ноября 1957 г.
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Пол
+          span.pf-pers-info__value пробка
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Статус
+          span.pf-pers-info__value Представитель генштаба
+            +tooltip
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Локация
+          span.pf-pers-info__value Россия
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Род занятий
+          span.pf-pers-info__value Дизайнересса
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Сайт
+          span.pf-pers-info__value 
+            a.pf-pers-info__link(href="##") www.litres.ru
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Читалки
+          span.pf-pers-info__value PocketBook Touch Lux 3
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Рейтинг
+          span.pf-pers-info__value
+            a.pf-pers-info__link(href="##") 153 тыс. баллов
+            +tooltip
+        li.pf-pers-info__item
+          span.pf-pers-info__prop Активность
+          span.pf-pers-info__value
+            a.pf-pers-info__link(href="##") 2 508 баллов
+        li.pf-pers-info__item
+          span.pf-pers-info__prop На Лайвлибе с
+          span.pf-pers-info__value 2 марта 2022 г.
+      .pf-pers-info__social-list
+        span.pf-pers-info__prop Профили в соцсетях
+        span.pf-pers-info__value.pf-pers-info__value_socials
+          ul.pf-pers-info__socials
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.vk(href="##") VK
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.google(href="##") Google
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.mailru(href="##") Mail.ru
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.litres(href="##") ЛитРес
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.ok(href="##") OK
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.livejournal(href="##") LiveJournal
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.lastfm(href="##") Last.fm
+            li.pf-pers-info__social
+              a.pf-pers-info__social-link.linkedin(href="##") LinkedIn

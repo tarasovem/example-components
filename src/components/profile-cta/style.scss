@@ -1,0 +1,70 @@
+@use '../../scss/colors' as *;
+
+.pf-cta {
+  background-repeat: no-repeat;
+  margin: 0 16px;
+
+  &.note {
+    background-image: url('/images/profile-cta-note.png');
+    padding-top: 120px;
+    background-position: center top 44px;
+  }
+
+  &.book {
+    background-image: url('/images/profile-cta-book.png');
+    padding-top: 136px;
+    background-position: center top 60px;
+  }
+}
+
+.pf-cta.stranger {
+  margin-bottom: 88px;
+}
+
+.pf-cta__title {
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #252526;
+  text-align: center;
+}
+
+.pf-cta__description {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.pf-cta__button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-top: 16px;
+  color: $white;
+  display: inline-block;
+  background-color: $blue_4;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  padding: 8px 16px;
+
+  &.plus {
+    padding: 8px 16px 8px 36px;
+    
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-image: url('/images/SVGsprite.svg');
+      background-repeat: no-repeat;
+      background-position: -114px -156px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      display: block;
+      position: absolute;
+    }
+  }
+}

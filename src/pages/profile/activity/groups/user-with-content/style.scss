@@ -1,0 +1,27 @@
+@forward 'src/scss/main';
+@use 'src/components/profile-menu/style' as *;
+@use 'src/components/tabs/style' as *;
+@use 'src/components/profile-tools/style' as *;
+@use 'src/components/profile-group/style' as *;
+@use 'src/components/profile-section-select/style' as *;
+@use 'src/components/pagination/style' as *;
+
+.page-content .header {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 999;
+}
+
+.tabs {
+  margin-top: 10px;
+}
+
+.profile-group {
+  margin: 24px 16px 38px;
+}

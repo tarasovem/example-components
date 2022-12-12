@@ -1,0 +1,107 @@
+.profile-group__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-person .profile-group__item {
+  display: flex;
+  position: relative;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0 0 22px;
+}
+
+.profile-group__img {
+  display: flex;
+  flex-shrink: 0;
+  margin: 0 12px 0 0;
+}
+
+.profile-person .profile-group__img {
+  margin: 0 16px 0 0;
+  z-index: 3;
+  transform: translateY(-2px);
+}
+
+.profile-group__img img {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-person .profile-group__img img {
+  height: 64px;
+  width: 64px;
+}
+
+.profile-group__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-group__name, .profile-group__name:visited {
+  font: 600 16px/20px "Source Sans Pro", sans-serif;
+  color: #252626;
+}
+
+.profile-group-tag {
+  font: 12px/18px "Source Sans Pro", sans-serif;
+  margin: 0 0 8px;
+  overflow: hidden;
+}
+
+.profile-group-tag a, .profile-group-tag a:visited {
+  font: 12px/16px "Source Sans Pro", sans-serif;
+  color: #217DD1;
+}
+
+.profile-group-tag a::after {
+  content: ', ';
+}
+
+.profile-group__link:visited, .profile-group__link {
+  padding-left: 28px;
+  margin-right: 19px;
+  margin-bottom: 3px;
+  position: relative;
+  display: inline-block;
+  color: #88898C;
+  font: 14px/24px "Source Sans Pro", sans-serif;
+}
+
+.profile-group__link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-user::before {
+  background: url("/images/SVGsprite.svg") -278px -78px no-repeat;
+}
+
+.icon-book::before {
+  background: url("/images/SVGsprite.svg") -590px -78px no-repeat;
+}
+
+.sab__link {
+  position: relative;
+  padding: 0 0 0 28px;
+  width: 36px;
+}
+
+.sab__link--active.icon-bookmark::before {
+  background: url("/images/SVGsprite.svg") -104px -52px no-repeat;
+}
+
+.profile-group__link.sab__link span, .profile-group__link.sab__link.sab__link--active span {
+  color: #88898C;
+  font: 14px/24px "Source Sans Pro", sans-serif;
+  vertical-align: -1px;
+  font-weight: normal;
+  font-size: 14px;
+}

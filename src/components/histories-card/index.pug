@@ -1,0 +1,53 @@
+mixin histories-card(overlap)
+  article.histories-card
+    .header-card
+      a.header-card-user(href="##")
+        img.header-card-user__avatar(src="/images/avatar-136.png" width="100%" height="auto")
+      a.header-card-user__name(href="##")
+        span JewelJul
+      a.header-card__category(href="##") в историях
+      
+      if overlap
+        a.header-card__overlap(href="##")
+          span.comparison= overlap
+          
+      .header-card__menu
+        .header-card__menu-block
+          a(href="##") Пожаловаться
+    .lenta-card
+      .lenta-card-book
+        img.lenta-card__avatar(src="/images/avatar-136.png" width="100%" height="100%")
+        .lenta-card-book__wrapper
+          a.lenta-card__book-title(href="##") Над горой играет свет 
+          p.lenta-card__author-wrap
+            a.lenta-card__author(href="##") Кэтрин Мадженди
+          a.lenta-card-book__link(href="##")
+            img.lenta-card-book__img(src="/images/book-cover-1.jpg" width="100%" height="auto")
+          .lenta-card__rating 4,2
+          .userbook-container.btn-add-plus__wrapper
+            a.btn-add-plus
+              i
+      .lenta-card__details
+        p.lenta-card__date 30 июня 2019 г.
+        p.lenta-card__aliases 18К
+      h3.lenta-card__title
+        a(href="##") Мое отношение к недочитанным книгам
+        i.lenta-card__unformat(title="Это не история")
+      .lenta-card__text.without-readmore
+        div
+          p. 
+            Во-вторых, они мне интересны. В голове возникают десятки вопросов к самой себе. А почему не нравится эта 
+            тема? Что в ней такого, что вызывает столь острое неприятие, что вызывает столь острое неприя недочитанным 
+            книгам у меня особое отношение. Множественное. Во-вторых, они мне интересны. В голове возникают 
+            десятки вопросов...
+        a.read-more__link(href="##") Развернуть
+    .footer-card
+      .footer-card__soc-active
+        a.sab__link.icon-like.no-bold(href="##")
+          span 179
+        a.sab__link.icon-comment(href="##") 231
+        span
+          a.sab__link.icon-bookmark(href="##")
+            span.count-in-fav 38
+      .soc-active-block__wrapper
+        a.sab__link.icon-share 38

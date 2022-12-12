@@ -1,0 +1,61 @@
+mixin review-card(state)
+  article.review-card
+    .header-card
+      a.header-card-user(href="##")
+        img.header-card-user__avatar(src="/images/review-card-avatar.png" alt="")
+      .header-card__wrapper
+        .header-card__row1
+          a.header-card-user__name
+            span bookish_raccoon
+          a.header-card__category(href="##") в рецензии
+        .header-card__row2
+          p.header-card-user__class Эксперт
+          p.header-card-user__status Просто делюсь
+      if state === "stranger"
+        a.header-card__overlap(href="##")
+          span.comparison
+      .header-card__menu
+        .header-card__menu-block
+          a(href="##") Пожаловаться
+    .lenta-card
+      .lenta-card-book
+        img.lenta-card-book__bg(src="/images/review-card-bookcover.png" alt="" width="100%" height="auto")
+        a.lenta-card-book__link
+          img.lenta-card-book__img(src="/images/review-card-bookcover.png" alt="")
+        .lenta-card-book__wrapper
+          a.lenta-card__book-title Меч Предназначения (сборник)
+          p.lenta-card__author-wrap
+            a.lenta-card__author(href="##") Анджей Сапковский
+          .lenta-card__rating
+            span 4,6
+          .userbook-container.btn-add-plus__wrapper
+            a.btn-add-plus(href="##")
+              i
+      .lenta-card__details
+        p.lenta-card__date 30 июня 2019 г.
+        p.lenta-card__best Лучшее на Лайвлибе
+        p.lenta-card__aliases
+          span 18К
+      h3.lenta-card__title
+        span.lenta-card__mymark 9
+        span.lenta-card__spoiler Спойлер
+        i.lenta-card__attention
+        a(href="#") Баллады пишут не для того, чтобы в них верили. Их пишут, чтобы ими волновать.
+      .lenta-card__text.without-readmore
+        div
+          p 
+            | Второй том серии Ведьмак изменил свою атмосферу. Если в первой книге было довольно легко, забавно и юмора 
+            | было прилично, то во второй упор больше делается на внутренних проблемах героев. Тут есть и любовные терзания,
+            | и философские подтексты, и рефлексия персонажей. Читателю показывают есть такая возможность, ведь в Италии откры...
+        a.read-more__link Развернуть
+    .footer-card
+      .footer-card__soc-active
+        a.sab__link.icon-like.no-bold(href="##")
+          span.no-plus.vote-hand 179
+        a.sab__link.icon-comment(href="##") 231
+        span
+          a.sab__link.icon-bookmark(href="##")
+            span.count-in-fav 38
+      .soc-active-block__wrapper
+        a.sab__link.icon-share(href="##")
+          span 38

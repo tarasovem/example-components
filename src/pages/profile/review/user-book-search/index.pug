@@ -1,0 +1,25 @@
+extends /pages/layout
+
+block variables
+  - const pageTitle = 'Профиль - Рецензии - Свои'
+
+block content
+  main.page-content
+    section.header
+      // TODO: Шапка профиля
+      +profile-menu
+    +profile-cta(
+      'note',
+      'Напишите свою первую рецензию',
+      'Расскажите о книгах, которые произвели на вас самое большое впечатление, читайте отзывы других, и открывайте для себя новые книги.'
+    )
+    +profile-review-book-search('Выбрать книгу для рецензии')
+    p.pf-review__title Рецензии других читателей
+    +profile-tools
+    section.lenta-list
+      +review-card
+      +review-card
+      +review-card
+      +review-card
+      +review-card
+    +pagination
